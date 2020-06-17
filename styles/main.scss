@@ -1,0 +1,42 @@
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/header";
+@import "partials/showcase";
+@import "partials/aside";
+@import "partials/footer";
+@import "partials/info";
+@import "partials/contact";
+@import "partials/products";
+
+.cards-container {
+  @include flex-display($justify: space-evenly);
+
+  .card {
+    box-shadow: $elevation-1;
+    border-radius: 3px;
+    width: 300px;
+    background: white;
+    cursor: pointer;
+    transition: ease-in 100ms;
+
+    img {
+      width: 100%;
+      border-radius: 3px 3px 0 0;
+    }
+
+    h3 {
+      font-family: $text-font;
+      font-size: 1.3rem;
+      margin: 20px 20px 0;
+    }
+
+    p {
+      margin: 20px;
+      text-align: center;
+    }
+
+    &:hover {
+      box-shadow: $elevation-2;
+    }
+  }
+}

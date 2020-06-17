@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contact">
+      <section id="contact-info">
+        <h1>Contact Us</h1>
+        <ul>
+          <li>
+            <label for="send-mail">Email: </label>
+            <a href="mailto:youremail@gmail.com" id="send-mail">
+              youremail@gmail.com
+            </a>
+          </li>
+          <li>
+            <label for="call">Call: </label>
+            <a href="tel:+233123456789" id="call">+233123456789</a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact-form">
+        <h2>Contact Form</h2>
+        <fieldset title="Contact Form" name="contact-form">
+          <form>
+            <div>
+              <label for="firstName">First Name</label>
+              <br />
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Enter your First Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="lastName">Last Name</label>
+              <br />
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Enter your Last Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label for="subject">Addition Information</label>
+              <br />
+              <textarea
+                name="subject"
+                id="subject"
+                cols="40"
+                rows="5"
+                placeholder="Additional information"
+              ></textarea>
+            </div>
+            <br />
+            <button type="submit">SUBMIT</button>
+          </form>
+        </fieldset>
+      </section>
+      <hr />
+      <section id="social-links">
+        <h3>Follow Me</h3>
+        <ul>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">pinterest</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>&copy; Copyright by {YourName}, 2020</footer>
+  </body>
+</html>

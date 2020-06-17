@@ -1,0 +1,38 @@
+// colors
+$primary-color: #08f;
+$secondary-color: #f80;
+
+// fonts
+$header-font: "Times New Roman", Times, serif;
+$text-font: Arial, Helvetica, sans-serif;
+
+// shadows
+$elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+$elevation-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+  0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+$elevation-3: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+  0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+
+/* MIXINS */
+@mixin flex-display($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button($color, $background-color) {
+  padding: 10px 20px;
+  border: 2px solid $color;
+  background-color: $background-color;
+  font-weight: bold;
+  font-family: $text-font;
+  color: $color;
+  cursor: pointer;
+  transition: all ease 200ms;
+
+  &:hover {
+    background-color: transparentize($primary-color, 0.3);
+  }
+}

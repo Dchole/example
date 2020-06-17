@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+p {
+  font-family: $text-font;
+}
+
+a {
+  font-family: $text-font;
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,53 @@
+aside {
+  position: absolute;
+  top: 50%;
+  height: fit-content;
+  width: 200px;
+  border-top: 2px solid $primary-color;
+  border-right: 2px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
+  transform: translateY(-50%);
+  background-color: transparentize($primary-color, 0.9);
+
+  h2 {
+    text-align: center;
+    font-family: $text-font;
+    padding: 10px 0;
+    color: white;
+    background-color: $primary-color;
+  }
+
+  ul {
+    width: 100%;
+
+    li {
+      padding: 15px 0;
+
+      a {
+        color: white;
+        border-bottom: 1px solid black;
+        font-family: $text-font;
+        text-decoration: none !important;
+        transition: ease 200ms;
+
+        &:hover {
+          background-color: lighten($primary-color, 10%);
+          color: white;
+        }
+      }
+
+      #books {
+        border-top: 1px solid black;
+        padding: 15px 77px;
+      }
+
+      #articles {
+        padding: 15px 73px;
+      }
+
+      #writers {
+        padding: 15px 73.5px;
+      }
+    }
+  }
+}
